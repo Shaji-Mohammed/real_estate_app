@@ -14,7 +14,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.anonymous.real_estateapp"
@@ -30,12 +30,26 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "resizeMode": "cover",
+          "backgroundColor": "#ffffff",
+          "enableFullScreenImage_legacy": true
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assests/fonts/Rubik-Bold.ttf",
+            "./assests/fonts/Rubik-Regular.ttf",
+            "./assests/fonts/Rubik-ExtraBold.ttf",
+            "./assests/fonts/Rubik-Medium.ttf",
+            "./assests/fonts/Rubik-Light.ttf",
+            "./assests/fonts/Rubik-SemiBold.ttf"
+          ]
         }
       ]
     ],
+
     "experiments": {
       "typedRoutes": true
     }
