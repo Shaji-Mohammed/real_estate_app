@@ -1,6 +1,6 @@
-import {createContext, ReactNode, useContext} from 'react';
-import {useAppwrite} from "@/lib/useAppwrite";
-import {getCurrentUser} from "@/lib/appwrite";
+import React, {createContext, ReactNode, useContext} from 'react';
+import {useAppwrite} from "./useAppwrite";
+import {getCurrentUser} from "./appwrite";
 
 interface User {
     $id: string;
@@ -27,8 +27,7 @@ export const GlobalProvider = ({ children }: { children: ReactNode }) => {
         fn: getCurrentUser,
     });
 
-    // !null = true => !true => false;
-    // !{ name: "Bob" } => false => true
+
     const isLoggedIn = !!user;
     return (
         <GlobalContext.Provider value={{
