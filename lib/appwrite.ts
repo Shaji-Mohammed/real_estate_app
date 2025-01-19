@@ -73,7 +73,7 @@ export async function getCurrentUser() {
         }
 
     } catch (e) {
-        console.error(e);
+        console.log(e);
         return false;
     }
 }
