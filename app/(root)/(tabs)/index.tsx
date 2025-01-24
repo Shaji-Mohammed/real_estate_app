@@ -1,4 +1,4 @@
-import {FlatList, Image, SafeAreaView, Text, TouchableOpacity, View} from "react-native";
+import {Button, FlatList, Image, SafeAreaView, Text, TouchableOpacity, View} from "react-native";
 import {Link} from "expo-router";
 import images from "@/constants/images";
 import icons from "@/constants/icons";
