@@ -1,8 +1,7 @@
-import {View, Text, Image, TextInput, TouchableOpacity} from 'react-native'
+import {View, Image, TextInput, TouchableOpacity} from 'react-native'
 import React, {useState} from 'react'
 import {router, useLocalSearchParams, usePathname} from "expo-router";
 import icons from "@/constants/icons";
-import * as sea from "node:sea";
 import {useDebouncedCallback} from "use-debounce";
 
 const Search = () => {
@@ -24,7 +23,7 @@ const Search = () => {
                 <TextInput
                     value={search}
                     onChangeText={handleSearch}
-                    placeholder={"Search"}
+                    placeholder="Search for anything"
                     className={"text-sm font-rubik text-black-300 ml-2 flex-1"}
                 />
             </View>
